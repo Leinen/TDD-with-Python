@@ -70,6 +70,9 @@ class NewVisitorTest(unittest.TestCase):
         
         # Satisfied, she goes back to sleep
         
+    def test_django_secret_key_is_taken_from_dotenv_file(self):
+        self.fail('Write the test!')
+        
         
 
 if __name__ == '__main__':
