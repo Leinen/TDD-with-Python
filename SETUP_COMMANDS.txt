@@ -1,0 +1,19 @@
+>>>d: cd D:\Repositories\Git\TDD-with-Python
+>>>conda activate TDD
+
+##1st CMD Window (Annaconda Prompt)
+>>>python manage.py runserver
+
+##2nd CMD Window
+# Functional Test (FT) - Testserver needed
+>>>python function_test.py
+# Unit Test
+>>>python manage.py test
+
+
+
+## other stuff
+
+# delete / reset database
+>>>del db.sqlite3
+>>>python manage.py migrate --noinput
