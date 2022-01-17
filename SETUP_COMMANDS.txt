@@ -19,3 +19,7 @@
 # delete / reset database
 >del db.sqlite3
 >python manage.py migrate --noinput
+
+# collect static files
+>python manage.py collectstatic --noinput # Collects static files in ./static folder, as defined in ./superlists/settings.py with STATIC_ROOT.
+                                          # All static files are in one folder. That makes it easier to find them for a web server!
