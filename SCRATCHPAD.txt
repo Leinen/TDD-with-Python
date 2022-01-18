@@ -1,1 +1,33 @@
 ﻿
+
+
+DEPLOYMENT CHAPTERS OVERVIEW
+There’s lots of stuff in the next three chapters, so here’s an overview to help you keep your bearings:
+
+This chapter: getting a basic manual deployment up and running
+
+	Adapt our FTs so they can run against a staging server.
+
+	Spin up a server, install all the required software on it, and point our staging and live domains at it.
+
+	Upload our code to the server using Git.
+
+	Try and get a quick-and-dirty version of our site running on the staging domain using the Django dev server.
+
+	Set up a virtualenv on the server and make sure the database and static files are working.
+
+	As we go, we’ll keep running our FT, to tell us what’s working and what’s not.
+
+Next chapter: moving to a production-ready config
+
+	Move from our quick-and-dirty version to a production-ready configuration.
+
+	Stop using the Django dev server, use Nginx and Gunicorn as web servers, configure efficient static file serving, set our app to start automatically on boot with Systemd.
+
+	Security: Use environment variables to DEBUG to False, change the SECRET_KEY, and so on
+
+Third deployment chapter: automating the deployment
+
+	Once we have a working config, we’ll write a script to automate the process we’ve just been through manually, so that we can deploy our site automatically in future.
+
+	Finally we’ll use this script to deploy the production version of our site on its real domain.
