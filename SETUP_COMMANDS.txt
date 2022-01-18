@@ -23,3 +23,10 @@
 # collect static files
 >python manage.py collectstatic --noinput # Collects static files in ./static folder, as defined in ./superlists/settings.py with STATIC_ROOT.
                                           # All static files are in one folder. That makes it easier to find them for a web server!
+
+# use python in git bash (TDD environment)
+$ conda activate TDD
+$ STAGING_SERVER=superlists-staging.ottg.eu python manage.py test functional_tests
+	# setup conada first time
+	$ PATH="/d/Programme/Anaconda3/:/d/Programme/Anaconda3/Scripts":$PATH
+	$ conda init bash
